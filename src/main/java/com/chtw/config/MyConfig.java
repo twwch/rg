@@ -19,9 +19,12 @@ public class MyConfig implements WebMvcConfigurer {
         WebMvcConfigurer adapter = new WebMvcConfigurer() {
             @Override
             public void addViewControllers(ViewControllerRegistry registry) {
-                registry.addViewController("/").setViewName("login");
-                registry.addViewController("/index.html").setViewName("index");
-                registry.addViewController("/home.html").setViewName("home");
+                registry.addViewController("/").setViewName("/user/login");
+                registry.addViewController("/index.html").setViewName("user/index");
+                registry.addViewController("/admin").setViewName("/admin/login");
+                registry.addViewController("/admin/home.html").setViewName("admin/home");
+                registry.addViewController("/goyuansouList").setViewName("admin/yuansou_list");
+                registry.addViewController("/out").setViewName("admin/login");
                 //registry.addViewController("/Attract/getAll").setViewName("home");
             }
         };

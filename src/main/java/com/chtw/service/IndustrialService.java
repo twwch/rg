@@ -1,6 +1,6 @@
 package com.chtw.service;
 
-import com.chtw.bean.IndustrialCon;
+
 import com.chtw.bean.IndustrialType;
 import com.chtw.bean.IndustrialTypeExample;
 import com.chtw.mapper.IndustrialTypeMapper;
